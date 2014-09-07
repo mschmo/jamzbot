@@ -3,7 +3,7 @@ from .message import FeedMessage
 
 class OneADay(FeedMessage):
     feed_url = 'http://feeds.feedburner.com/blogspot/oneaday?format=xml'
-    posted_file = 'messages/posted/one_a_day.txt'
+    posted_file = 'posted/one_a_day.txt'
 
     def get_message(self):
         entry = self.get_feed().entries[0]

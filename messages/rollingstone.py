@@ -3,7 +3,7 @@ from .message import FeedMessage
 
 class RollingStone(FeedMessage):
     feed_url = 'http://www.rollingstone.com/music.rss'
-    posted_file = 'messages/posted/rollingstone.txt'
+    posted_file = 'posted/rollingstone.txt'
 
     def get_message(self):
         entry = self.get_feed()['items'][0]
